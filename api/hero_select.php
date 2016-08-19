@@ -1,4 +1,8 @@
-<?php //connect to database
+<?php
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST');
+header("Access-Control-Allow-Headers: X-Requested-With");
+//connect to database
 require 'mysql_connect.php';
 //create output
 $output = ["success" => false];
